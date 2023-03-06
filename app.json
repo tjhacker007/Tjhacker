@@ -1,0 +1,47 @@
+{
+    "name": "Auto Filter Bot",
+    "description": "Kind of a filter bot where you don't have to add filters manually.",
+    "logo": "https://telegra.ph/file/71aaa621508cd696ab538.jpg",
+    "keywords": [
+        "Auto",
+        "Filter",
+        "Telegram Bot",
+        "TroJanzHEX"
+    ],
+    "website": "https://TroJanzHEX.me",
+    "repository": "https://github.com/TroJanzHEX/Auto-Filter-Bot",
+    "success_url": "https://telegram.dog/TroJanzHEX",
+    "env": {
+        "TG_BOT_TOKEN": {
+            "description": "You Telegram Bot Token from @BotFather",
+            "value": "6239376376:AAEdXvJyycIpYBUXJafw18hAzPYkIUNrmmo"
+        },
+        "API_HASH": {
+            "description": "Your API Hash from my.telegram.org or @UseTGXBot",
+            "value": "0192fd3730b181af037274f8d718c479"
+        },
+        "APP_ID": {
+            "description": "Your APP ID from my.telegram.org or @UseTGXBot",
+            "value": "23068172"
+        },
+        "TG_USER_SESSION": {
+            "description": "A pyrogram user session string. Generate from https://repl.it/@SpEcHiDe/GenerateStringSession",
+            "value": "BQBL_7vLQ-oeHvtxPwwhBE-OJ6ceChhZxGfoNgAZ04-w_t4k4_xLyFtxQEc9BTChPK1u2HitANMpExt8elzVa5u1f10GlhluRS5AOFDE-fimKg0YJPJsOEWEXpJSDhR2DMF6pAD8XfIoQhwPYopRdc48Irtpn4YhEo8oRBltdI_fXXhalq3maiYK-iVyFMQKnA07o6pa_XiLbv9dBK2gYydAIK6G7mgcAZjtqId6DiX2wceEXn5tVHrWgLYSxZnrhQTKhnzACvk_Nj0vh-zmlSP0UZkiMpLTp16yVa661bxSapk5-z-YqJb4c5VH4eOrZIRNfSOF9hR_wVbErd_eyOpxcFyK4wA"
+        },
+        "MAINCHANNEL_ID": {
+            "description": "ID of Channel from which the bot should search files",
+            "value": "-1001850269560"
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
